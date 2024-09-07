@@ -43,6 +43,23 @@ The model uses the following steps in the pipeline:
 2. **TfidfTransformer**: Transforms the bag-of-words into a TF-IDF matrix, giving more weight to less frequent but important words.
 3. **RandomForestClassifier**: A random forest classifier is used to predict the category of news articles.
 
+## Initial Results
+Below is the classification report for the initial model trained on the AG News dataset:
+```
+              precision    recall  f1-score   support
+
+    Business       0.86      0.80      0.83      1900
+    Sci/Tech       0.83      0.85      0.84      1900
+      Sports       0.90      0.97      0.93      1900
+       World       0.90      0.87      0.88      1900
+
+    accuracy                           0.87      7600
+   macro avg       0.87      0.87      0.87      7600
+weighted avg       0.87      0.87      0.87      7600
+
+```
+   
+
 ## Future Work
 
 In future updates, we plan to:
